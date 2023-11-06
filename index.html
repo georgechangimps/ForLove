@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>找到天使了</title>
+</head>
+<style>
+    .music-container {
+        text-align: center;
+    }
+
+    #lyrics-container {
+        margin-top: 100px;
+        height: 200px;
+        overflow: hidden;
+        border: 1px solid #ccc;
+    }
+
+    #lyrics {
+        position: relative;
+        top: 0;
+        transition: top 1s;
+    }
+
+    audio {
+        width: 100%;
+    }
+
+    .photo-container {
+        margin-top: 50px;
+        text-align: center;
+        position: relative;
+    }
+
+    .photo {
+        display: none;
+        position: relative;
+    }
+
+    .photo img {
+        width: 100%;
+    }
+    
+    .visible {
+        display: block;
+    }
+
+    .photo-text {
+        font-size: 18px;
+        position: absolute;
+        top: 20px;
+        left: 20px;
+        color: white;
+        background-color: rgba(0, 0, 0, 0.5);
+        padding: 10px;
+    }
+</style>
+
+<body>
+    <div class="music-container">
+        <audio id="musicPlayer" controls loop>
+            <source src="Fiona Sit - 找到天使了.mp3" type="audio/mpeg">
+        </audio>
+    
+        <div id="lyrics-container">
+            <div id="lyrics">
+                <p>窩在舊沙發 聽著老音樂</p>
+    
+                <p>愛纏在一起聊感覺</p>
+    
+                <p>在你的身上 假裝彈鋼琴</p>
+    
+                <p>我們笑一整天</p>
+    
+                <p>逛風景圖片</p>
+    
+                <p>作夢環遊世界</p>
+    
+                <p>就像真的到了愛琴海邊</p> 
+    
+                <p>快樂的關鍵 不是去哪裡 而是誰在身邊</p>
+    
+                <p>陪我 有你陪我 心情總會過得像週末</p>
+    
+                <p>我們都找到天使了</p> 
+    
+                <p>說好了 心事不能偷藏著</p> 
+    
+                <p>甚麼都 一起做 幸福得 沒話說</p> 
+    
+                <p>把壞脾氣變成了好溝通</p>
+    
+                <p>我們都找到天使了 約好了</p> 
+    
+                <p>負責對方的快樂</p> 
+    
+                <p>陽光下 的山坡 你素描 的以後</p> 
+    
+                <p>怎麼抄襲我腦袋 想的</p>
+    
+                <p>窩在舊沙發 聽著老音樂</p>
+    
+                <p>愛纏在一起聊感覺</p> 
+    
+                <p>在你的身上 假裝彈鋼琴</p> 
+    
+                <p>我們笑一整天</p>
+    
+                <p>逛風景圖片 作夢環遊世界</p> 
+    
+                <p>就像真的到了愛琴海邊</p> 
+    
+                <p>快樂的關鍵 不是去哪裡 而是誰在身邊</p> 
+    
+                <p>陪我 有你陪我</p> 
+    
+                <p>心情總會過得像週末</p>
+    
+                <p>我們都找到天使了 說好了 心事不能偷藏著</p> 
+    
+                <p>甚麼都 一起做 幸福得 沒話說</p> 
+    
+                <p>把壞脾氣變成了好溝通</p>
+    
+                <p>我們都找到天使了 約好了 負責對方的快樂</p> 
+    
+                <p>陽光下 的山坡 你素描 的以後</p> 
+    
+                <p>怎麼抄襲我腦袋 想的</p> 
+    
+                <p>罰你答應我 學會彈 guitar 每天都陪我唱歌</p>
+    
+                <p>我們都找到天使了 說好了 心事不能偷藏著</p> 
+    
+                <p>甚麼都 一起做 幸福得 沒話說</p> 
+    
+                <p>把壞脾氣變成了好溝通</p>
+    
+                <p>我們都找到天使了 約好了 負責對方的快樂</p> 
+    
+                <p>我為你 體貼的 你為我 守護的 用心的事越小越 感動</p>
+            </div>
+        </div>
+    </div>
+    
+    <div class="photo-container" style="display: flex;flex-direction: column;">
+        <div class="photo visible">
+            <img src="u&me.jpg" alt="">
+            <p class="photo-text">想像一個天氣很好的日子，我們在草地上，我靠著樹坐著，妳躺在我的腿上</p>
+        </div>
+        <div class="photo">
+            <img src="u&me2.jpg" alt="">
+            <p class="photo-text">風兒輕輕吹，妳在我身邊</p>
+        </div>
+        <div class="photo">
+            <img src="u&me3.jpg" alt="">
+            <p class="photo-text">原來這就是，幸福的滋味</p>
+        </div>
+        <div class="photo">
+            <img src="u&me4.jpg" alt="">
+            <p class="photo-text">讓我們牽手，一起到永遠</p>
+        </div>
+        <div class="photo">
+            <img src="u&me5.jpg" alt="">
+            <p class="photo-text">別管紛擾的世界~</p>
+        </div>
+    </div>
+
+    <div id="form-container" style="display: none; position: fixed; top: 0; left: 0; width: 100%; height: 100%; background: rgba(0, 0, 0, 0.7); z-index: 1;">
+        <div style="background: white; max-width: 400px; margin: 20px auto; padding: 20px;">
+            <h2>請填寫以下表單</h2>
+            <form id="user-form">
+                <label for="name">女方姓名:</label>
+                <input type="text" id="name" name="name" required><br><br>
+
+                <label for="name">男方姓名:</label>
+                <input type="text" id="name2" name="name2" required><br><br>
+
+                <label for="yes">Yes</label>
+                <input type="radio" id="yes" name="response" value="Yes" required>
+
+                <label for="no">No</label>
+                <input type="radio" id="no" name="response" value="No" required><br><br>
+               
+                <input type="submit" value="送出">
+            </form>
+        </div>
+    </div>
+
+    <script>
+        let currentPhotoIndex = 0;
+        const photos = document.querySelectorAll('.photo');
+
+        function showNextPhoto() {
+            photos[currentPhotoIndex].classList.remove('visible');
+            currentPhotoIndex = (currentPhotoIndex + 1) % photos.length;
+            photos[currentPhotoIndex].classList.add('visible');
+        }
+
+        setInterval(showNextPhoto, 3000);
+
+        const lyricsContainer = document.getElementById('lyrics');
+        let lyricsTop = 0;
+
+        function scrollLyrics() {
+            lyricsTop -= 20;
+            lyricsContainer.style.top = lyricsTop + 'px';
+
+            if (lyricsTop < -lyricsContainer.clientHeight) {
+                lyricsTop = 0;
+                lyricsContainer.style.top = '0';
+            }
+        }
+
+        const musicPlayer = document.getElementById('musicPlayer');
+        let lyricsTimeout;
+
+        musicPlayer.addEventListener('play', () => {
+            lyricsTimeout = setTimeout(() => {
+                setInterval(scrollLyrics, 3000);
+            }, 20000);
+        });
+
+        musicPlayer.addEventListener('pause', () => {
+            clearTimeout(lyricsTimeout);
+        });
+        musicPlayer.addEventListener('ended', () => {
+            clearTimeout(lyricsTimeout);
+        });
+
+        const sampleLyrics = [
+            "窩在舊沙發 聽著老音樂",
+            "愛纏在一起聊感覺",
+            "在你的身上 假裝彈鋼琴",
+            "我們笑一整天",
+            "逛風景圖片",
+            "作夢環遊世界",
+            "就像真的到了愛琴海邊",
+            "快樂的關鍵 不是去哪裡 而是誰在身邊",
+            "陪我 有你陪我 心情總會過得像週末",
+            "我們都找到天使了",
+            "說好了 心事不能偷藏著",
+            "甚麼都 一起做 幸福得 沒話說",
+            "把壞脾氣變成了好溝通",
+            "我們都找到天使了 約好了",
+            "負責對方的快樂",
+            "陽光下 的山坡 你素描 的以後",
+            "怎麼抄襲我腦袋 想的",
+            "窩在舊沙發 聽著老音樂",
+            "愛纏在一起聊感覺",
+            "在你的身上 假裝彈鋼琴",
+            "我們笑一整天",
+            "逛風景圖片",
+            "作夢環遊世界",
+            "就像真的到了愛琴海邊",
+            "快樂的關鍵 不是去哪裡 而是誰在身邊",
+            "陪我 有你陪我",
+            "心情總會過得像週末",
+            "我們都找到天使了",
+            "說好了 心事不能偷藏著",
+            "甚麼都 一起做 幸福得 沒話說",
+            "把壞脾氣變成了好溝通",
+            "我們都找到天使了 約好了",
+            "負責對方的快樂",
+            "陽光下 的山坡 你素描 的以後",
+            "怎麼抄襲我腦袋 想的",
+            "罰你答應我 學會彈 guitar 每天都陪我唱歌",
+            "我們都找到天使了",
+            "說好了 心事不能偷藏著",
+            "甚麼都 一起做 幸福得 沒話說",
+            "把壞脾氣變成了好溝通",
+            "我們都找到天使了 約好了",
+            "負責對方的快樂",
+            "我為你 體貼的 你為我 守護的 用心的事越小越 感動"
+        ];
+
+        lyricsContainer.innerHTML = sampleLyrics.map(lyric => `<p>${lyric}</p>`).join('');
+
+        window.onscroll = function() {
+            if (document.documentElement.scrollTop > 300) {
+                document.getElementById("form-container").style.display = "block";
+            }
+        };
+        
+        const userForm = document.getElementById('user-form');
+
+        userForm.addEventListener('submit', function(event) {
+            event.preventDefault();
+            const name = userForm.elements.name.value;
+            const name2 = userForm.elements.name2.value;
+            const response = userForm.elements.response.value;
+            alert(`女方姓名：${name}\n男方姓名：${name2}\n女方回覆：${response}`);
+            const certificateURL = `love.html?name=${name}&name2=${name2}&response=${response}`;
+            window.location.href = certificateURL;
+        });
+
+    </script>
+</body>
+</html>

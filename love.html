@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE-edge">
+    <title>愛情證書</title>
+</head>
+<style>
+    .certificate {
+        text-align: center;
+        margin: 50px;
+    }
+</style>
+
+<body>
+    <div class="photo-container" style="display: flex;flex-direction: column;">
+        <img src="bearLove.jpg" alt="">
+    </div>
+    <div class="certificate">
+        <h1>愛你一萬年</h1>
+        
+        <script>
+            const urlParams = new URLSearchParams(window.location.search);
+            const userName = urlParams.get('name');
+            const userName2 = urlParams.get('name2');
+            const userResponse = urlParams.get('response');
+
+            let status = '';
+            if (userResponse === 'Yes') {
+                status = '要巴著 ' + userName2 + ', 愛你一萬年';
+                document.write(`我, ${userName}, 在此宣布我${status}。`);
+            } 
+
+            if (userResponse === 'No') {
+                status = '要巴著 ' + userName + ', 愛你一萬年';
+                document.write(`我, ${userName2}, 在此宣布我${status}。`);
+            }
+
+        </script>
+
+        <p>證明此事</p>
+        <p>日期: 2023/11/11</p>
+    </div>
+</body>
+</html>
